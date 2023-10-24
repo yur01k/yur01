@@ -5,67 +5,10 @@
 </head>
 <body>
     <ul>
-        <li><a href="#task1">Завдання 1</a></li>
-        <li><a href="#task2">Завдання 2</a></li>
-        <li><a href="#task3">Завдання 3</a></li>
-        <li><a href="#task4">Завдання 4</a></li>
+        <li><a href="task1.html">Завдання 1</a></li>
+        <li><a href="task2.html">Завдання 2</a></li>
+        <li><a href="task3.html">Завдання 3</a></li>
+        <li><a href="task4.html">Завдання 4</a></li>
     </ul>
-
-    <div id="task1">
-        <!-- Результат завдання 1 буде виведено тут -->
-    </div>
-
-    <div id="task2">
-        <!-- Результат завдання 2 буде виведено тут -->
-    </div>
-
-    <div id="task3">
-        <!-- Результат завдання 3 буде виведено тут -->
-    </div>
-
-    <div id="task4">
-        <!-- Результат завдання 4 буде виведено тут -->
-    </div>
-
-    <script>
-        // Завдання 1
-        const customDate = new Date('2021-02-20T03:12:00');
-        document.getElementById('task1').textContent = `Завдання 1: Дата і час: ${customDate.toLocaleString()}`;
-
-        // Завдання 2
-        function getWeekDay(date) {
-            const days = ['НД', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
-            return days[date.getDay()];
-        }
-        document.getElementById('task2').textContent = `Завдання 2: Робочий день: ${getWeekDay(new Date())}`;
-
-        // Завдання 3
-        function getLastDayOfMonth(year, month) {
-            const nextMonth = new Date(year, month + 1, 0);
-            return nextMonth.getDate();
-        }
-        document.getElementById('task3').textContent = `Завдання 3: Останній день місяця: ${getLastDayOfMonth(2021, 1)}`;
-
-        // Завдання 4
-        function formatDate(date) {
-            const now = new Date();
-            const diff = now - date;
-
-            if (diff < 1000) {
-                return 'прямо зараз';
-            }
-
-            if (diff < 60000) {
-                return `${Math.floor(diff / 1000)} сек. назад`;
-            }
-
-            if (diff < 3600000) {
-                return `${Math.floor(diff / 60000)} хв. назад`;
-            }
-
-            return date.toLocaleString();
-        }
-        document.getElementById('task4').textContent = `Завдання 4: Форматована дата: ${formatDate(new Date())}`;
-    </script>
 </body>
 </html>
