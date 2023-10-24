@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Завдання 3</title>
+</head>
+<body>
+    <h1>Завдання 3</h1>
+    <script>
+        // Завдання 3
+        function getLastDayOfMonth(year, month) {
+            const nextMonth = new Date(year, month + 1, 0);
+            const result = nextMonth.getDate();
+            document.write(`Завдання 3: Останній день місяця: ${result}`);
+        }
+        getLastDayOfMonth(2021, 1);
+    </script>
+</body>
+</html>
